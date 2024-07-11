@@ -26,7 +26,7 @@ import { baseURL } from '@/store/constant'
 const defaultConfig = {
     backgroundColor: '#ffffff',
     fontSize: 16,
-    poweredByTextColor: '#303235',
+    poweredByTextColor: '#ffffff',
     botMessage: {
         backgroundColor: '#f7f8ff',
         textColor: '#303235'
@@ -64,7 +64,7 @@ const ShareChatbot = ({ isSessionMemory, isAgentCanvas }) => {
     const [errorMessage, setErrorMessage] = useState(chatbotConfig?.errorMessage ?? '')
     const [backgroundColor, setBackgroundColor] = useState(chatbotConfig?.backgroundColor ?? defaultConfig.backgroundColor)
     const [fontSize, setFontSize] = useState(chatbotConfig?.fontSize ?? defaultConfig.fontSize)
-    const [poweredByTextColor, setPoweredByTextColor] = useState(chatbotConfig?.poweredByTextColor ?? defaultConfig.poweredByTextColor)
+    const [poweredByTextColor, setPoweredByTextColor] = useState(chatbotConfig?.backgroundColor ?? defaultConfig.backgroundColor)
 
     const [botMessageBackgroundColor, setBotMessageBackgroundColor] = useState(
         chatbotConfig?.botMessage?.backgroundColor ?? defaultConfig.botMessage.backgroundColor
@@ -118,7 +118,7 @@ const ShareChatbot = ({ isSessionMemory, isAgentCanvas }) => {
         if (errorMessage) obj.errorMessage = errorMessage
         if (backgroundColor) obj.backgroundColor = backgroundColor
         if (fontSize) obj.fontSize = fontSize
-        if (poweredByTextColor) obj.poweredByTextColor = poweredByTextColor
+        if (poweredByTextColor) obj.poweredByTextColor = backgroundColor
 
         if (botMessageBackgroundColor) obj.botMessage.backgroundColor = botMessageBackgroundColor
         if (botMessageTextColor) obj.botMessage.textColor = botMessageTextColor
@@ -234,7 +234,7 @@ const ShareChatbot = ({ isSessionMemory, isAgentCanvas }) => {
                 setBackgroundColor(hexColor)
                 break
             case 'poweredByTextColor':
-                setPoweredByTextColor(hexColor)
+                setBackgroundColor(hexColor)
                 break
             case 'botMessageBackgroundColor':
                 setBotMessageBackgroundColor(hexColor)
@@ -415,19 +415,19 @@ const ShareChatbot = ({ isSessionMemory, isAgentCanvas }) => {
                     />
                 </div>
             </Stack>
-            {textField(title, 'title', 'Title', 'string', 'Flowise Assistant')}
+            {textField(title, 'title', 'Title', 'string', 'Forgeflow Assistant')}
             {textField(
                 titleAvatarSrc,
                 'titleAvatarSrc',
                 'Title Avatar Link',
                 'string',
-                `https://raw.githubusercontent.com/FlowiseAI/Flowise/main/assets/FloWiseAI_dark.png`
+                `https://raw.githubusercontent.com/`
             )}
             {textField(welcomeMessage, 'welcomeMessage', 'Welcome Message', 'string', 'Hello! This is custom welcome message')}
             {textField(errorMessage, 'errorMessage', 'Error Message', 'string', 'This is custom error message')}
             {colorField(backgroundColor, 'backgroundColor', 'Background Color')}
             {textField(fontSize, 'fontSize', 'Font Size', 'number')}
-            {colorField(poweredByTextColor, 'poweredByTextColor', 'PoweredBy TextColor')}
+            
 
             {/*BOT Message*/}
             <Typography variant='h4' sx={{ mb: 1, mt: 2 }}>

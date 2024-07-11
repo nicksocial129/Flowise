@@ -169,7 +169,7 @@
                     "tools": [],
                     "supervisor": "{{supervisor_0.data.instance}}",
                     "model": "",
-                    "promptValues": "{\"company\":\"Flowise Inc\",\"schema\":\"{{customFunction_0.data.instance}}\"}",
+                    "promptValues": "{\"company\":\"forgeflow ai Inc\",\"schema\":\"{{customFunction_0.data.instance}}\"}",
                     "maxIterations": ""
                 },
                 "outputAnchors": [
@@ -271,7 +271,7 @@
                     "tools": ["{{customTool_0.data.instance}}"],
                     "supervisor": "{{supervisor_0.data.instance}}",
                     "model": "",
-                    "promptValues": "{\"company\":\"Flowise Inc\"}",
+                    "promptValues": "{\"company\":\"forgeflow ai Inc\"}",
                     "maxIterations": ""
                 },
                 "outputAnchors": [
@@ -577,7 +577,7 @@
                 "type": "CustomTool",
                 "baseClasses": ["CustomTool", "Tool", "StructuredTool", "Runnable"],
                 "category": "Tools",
-                "description": "Use custom tool you've created in Flowise within chatflow",
+                "description": "Use custom tool you've created in forgeflow ai within chatflow",
                 "inputParams": [
                     {
                         "label": "Select Tool",
@@ -596,7 +596,7 @@
                         "id": "customTool_0-output-customTool-CustomTool|Tool|StructuredTool|Runnable",
                         "name": "customTool",
                         "label": "CustomTool",
-                        "description": "Use custom tool you've created in Flowise within chatflow",
+                        "description": "Use custom tool you've created in forgeflow ai within chatflow",
                         "type": "CustomTool | Tool | StructuredTool | Runnable"
                     }
                 ],
@@ -690,7 +690,7 @@
                     "tools": [],
                     "supervisor": "{{supervisor_0.data.instance}}",
                     "model": "",
-                    "promptValues": "{\"company\":\"Flowise Inc\"}",
+                    "promptValues": "{\"company\":\"forgeflow ai Inc\"}",
                     "maxIterations": ""
                 },
                 "outputAnchors": [

@@ -59,7 +59,7 @@ const App = () => {
 }
 
 const embedFullpageHtmlCode = (chatflowid) => {
-    return `<flowise-fullchatbot></flowise-fullchatbot>
+    return `<forgeflow-fullchatbot></forgeflow-fullchatbot>
 <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/gh/nicksocial129/ForgeFlowChat/dist/web.js"
     Chatbot.initFull({
@@ -126,7 +126,7 @@ const chatwindowConfig = (isReact = false) => {
     return isReact
         ? `chatWindow: {
                     showTitle: true,
-                    title: 'Flowise Bot',
+                    title: 'Forgeflow Bot',
                     titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
                     showAgentMessages: true,
                     welcomeMessage: 'Hello! This is custom welcome message',
@@ -167,13 +167,13 @@ const chatwindowConfig = (isReact = false) => {
                     footer: {
                         textColor: '#303235',
                         text: 'Powered by',
-                        company: 'Flowise',
-                        companyLink: 'https://flowiseai.com',
+                        company: 'Forgeflow AI',
+                        companyLink: 'https://forgeflow.ai',
                     }
                 }`
         : `chatWindow: {
                 showTitle: true,
-                title: 'Flowise Bot',
+                title: 'Forgeflow Bot',
                 titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
                 showAgentMessages: true,
                 welcomeMessage: 'Hello! This is custom welcome message',
@@ -214,8 +214,8 @@ const chatwindowConfig = (isReact = false) => {
                 footer: {
                     textColor: '#303235',
                     text: 'Powered by',
-                    company: 'Flowise',
-                    companyLink: 'https://flowiseai.com',
+                    company: 'Forgeflow AI',
+                    companyLink: 'https://forgeflow.ai',
                 }
             }`
 }
@@ -257,7 +257,7 @@ const App = () => {
 }
 
 const embedFullpageHtmlCodeCustomization = (chatflowid) => {
-    return `<flowise-fullchatbot></flowise-fullchatbot>
+    return `<forgeflow-fullchatbot></forgeflow-fullchatbot>
 <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/gh/nicksocial129/ForgeFlowChat/dist/web.js"
     Chatbot.initFull({
@@ -348,15 +348,15 @@ const EmbedChat = ({ chatflowid }) => {
                             <span>
                                 Paste this anywhere in the <code>{`<body>`}</code> tag of your html file.
                                 <p>
-                                    You can also specify a&nbsp;
+                                    Soon you can also specify a&nbsp;
                                     <a
                                         rel='noreferrer'
                                         target='_blank'
-                                        href='https://www.npmjs.com/package/flowise-embed?activeTab=versions'
+                                        href='https://www.forgeflow.ai'
                                     >
                                         version
                                     </a>
-                                    :&nbsp;<code>{`https://cdn.jsdelivr.net/npm/flowise-embed@<version>/dist/web.js`}</code>
+                                    :&nbsp;<code>{`https://cdn.jsdelivr.net/gh/nicksocial129/ForgeFlowChat/dist<version>/web.js`}</code>
                                 </p>
                             </span>
                             <div style={{ height: 10 }}></div>
