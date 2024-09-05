@@ -45,7 +45,7 @@ class ConversationSummaryMemory_Memory implements INode {
                 name: 'sessionId',
                 type: 'string',
                 description:
-                    'If not specified, a random id will be used. Learn <a target="_blank" href="https://docs.flowiseai.com/memory#ui-and-embedded-chat">more</a>',
+                    'If not specified, a random id will be used. Learn <a target="_blank" href="http://forgeflowdocs.notion.site/memory#ui-and-embedded-chat">more</a>',
                 default: '',
                 optional: true,
                 additionalParams: true

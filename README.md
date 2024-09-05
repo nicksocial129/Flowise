@@ -151,28 +151,28 @@ Flowise support different environment variables to configure your instance. You 
 
 ## 📖 Documentation
 
-[Flowise Docs](https://docs.flowiseai.com/)
+[Flowise Docs](http://forgeflowdocs.notion.site/)
 
 ## 🌐 Self Host
 
-Deploy Flowise self-hosted in your existing infrastructure, we support various [deployments](https://docs.flowiseai.com/configuration/deployment)
+Deploy Flowise self-hosted in your existing infrastructure, we support various [deployments](http://forgeflowdocs.notion.site/configuration/deployment)
 
--   [AWS](https://docs.flowiseai.com/deployment/aws)
--   [Azure](https://docs.flowiseai.com/deployment/azure)
--   [Digital Ocean](https://docs.flowiseai.com/deployment/digital-ocean)
--   [GCP](https://docs.flowiseai.com/deployment/gcp)
+-   [AWS](http://forgeflowdocs.notion.site/deployment/aws)
+-   [Azure](http://forgeflowdocs.notion.site/deployment/azure)
+-   [Digital Ocean](http://forgeflowdocs.notion.site/deployment/digital-ocean)
+-   [GCP](http://forgeflowdocs.notion.site/deployment/gcp)
 -   <details>
       <summary>Others</summary>
 
-    -   [Railway](https://docs.flowiseai.com/deployment/railway)
+    -   [Railway](http://forgeflowdocs.notion.site/deployment/railway)
 
         [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pn4G8S?referralCode=WVNPD9)
 
-    -   [Render](https://docs.flowiseai.com/deployment/render)
+    -   [Render](http://forgeflowdocs.notion.site/deployment/render)
 
-        [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://docs.flowiseai.com/deployment/render)
+        [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](http://forgeflowdocs.notion.site/deployment/render)
 
-    -   [HuggingFace Spaces](https://docs.flowiseai.com/deployment/hugging-face)
+    -   [HuggingFace Spaces](http://forgeflowdocs.notion.site/deployment/hugging-face)
 
         <a href="https://huggingface.co/spaces/FlowiseAI/Flowise"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm.svg" alt="HuggingFace Spaces"></a>
 

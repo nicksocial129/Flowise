@@ -14,11 +14,11 @@ const swaggerUiOptions = {
                 'This module serves auto-generated swagger-ui generated API docs from Flowise express backend, based on a swagger.yml file. Swagger is available on: http://localhost:6655/api-docs',
             license: {
                 name: 'Apache 2.0',
-                url: 'https://github.com/FlowiseAI/Flowise/blob/main/LICENSE.md'
+                url: 'http://flowiseai.com'
             },
             contact: {
-                name: 'FlowiseAI',
-                email: 'support@flowiseai.com'
+                name: 'Forgeflow',
+                email: 'support@forgeflowai.com'
             }
         },
         servers: [

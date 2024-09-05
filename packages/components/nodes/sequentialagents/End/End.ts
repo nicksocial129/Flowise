@@ -24,7 +24,7 @@ class End_SeqAgents implements INode {
         this.category = 'Sequential Agents'
         this.description = 'End conversation'
         this.baseClasses = [this.type]
-        this.documentation = 'https://docs.flowiseai.com/using-flowise/agentflows/sequential-agents#id-10.-end-node'
+        this.documentation = 'http://forgeflowdocs.notion.site/using-flowise/agentflows/sequential-agents#id-10.-end-node'
         this.inputs = [
             {
                 label: 'Agent | Condition | LLM | Tool Node',

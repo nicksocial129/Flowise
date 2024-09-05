@@ -141,28 +141,28 @@ Flowise 支持不同的环境变量来配置您的实例。您可以在 `package
 
 ## 📖 文档
 
-[Flowise 文档](https://docs.flowiseai.com/)
+[Flowise 文档](http://forgeflowdocs.notion.site/)
 
 ## 🌐 自托管
 
-在您现有的基础设施中部署自托管的 Flowise，我们支持各种[部署](https://docs.flowiseai.com/configuration/deployment)
+在您现有的基础设施中部署自托管的 Flowise，我们支持各种[部署](http://forgeflowdocs.notion.site/configuration/deployment)
 
--   [AWS](https://docs.flowiseai.com/deployment/aws)
--   [Azure](https://docs.flowiseai.com/deployment/azure)
--   [Digital Ocean](https://docs.flowiseai.com/deployment/digital-ocean)
--   [GCP](https://docs.flowiseai.com/deployment/gcp)
+-   [AWS](http://forgeflowdocs.notion.site/deployment/aws)
+-   [Azure](http://forgeflowdocs.notion.site/deployment/azure)
+-   [Digital Ocean](http://forgeflowdocs.notion.site/deployment/digital-ocean)
+-   [GCP](http://forgeflowdocs.notion.site/deployment/gcp)
 -   <details>
       <summary>其他</summary>
 
-    -   [Railway](https://docs.flowiseai.com/deployment/railway)
+    -   [Railway](http://forgeflowdocs.notion.site/deployment/railway)
 
         [![在 Railway 上部署](https://railway.app/button.svg)](https://railway.app/template/pn4G8S?referralCode=WVNPD9)
 
-    -   [Render](https://docs.flowiseai.com/deployment/render)
+    -   [Render](http://forgeflowdocs.notion.site/deployment/render)
 
-        [![部署到 Render](https://render.com/images/deploy-to-render-button.svg)](https://docs.flowiseai.com/deployment/render)
+        [![部署到 Render](https://render.com/images/deploy-to-render-button.svg)](http://forgeflowdocs.notion.site/deployment/render)
 
-    -   [HuggingFace Spaces](https://docs.flowiseai.com/deployment/hugging-face)
+    -   [HuggingFace Spaces](http://forgeflowdocs.notion.site/deployment/hugging-face)
 
         <a href="https://huggingface.co/spaces/FlowiseAI/Flowise"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm.svg" alt="HuggingFace Spaces"></a>
 

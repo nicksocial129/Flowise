@@ -141,28 +141,28 @@ Flowise は、インスタンスを設定するためのさまざまな環境変
 
 ## 📖 ドキュメント
 
-[Flowise ドキュメント](https://docs.flowiseai.com/)
+[Flowise ドキュメント](http://forgeflowdocs.notion.site/)
 
 ## 🌐 セルフホスト
 
-お客様の既存インフラに Flowise をセルフホストでデプロイ、様々な[デプロイ](https://docs.flowiseai.com/configuration/deployment)をサポートします
+お客様の既存インフラに Flowise をセルフホストでデプロイ、様々な[デプロイ](http://forgeflowdocs.notion.site/configuration/deployment)をサポートします
 
--   [AWS](https://docs.flowiseai.com/deployment/aws)
--   [Azure](https://docs.flowiseai.com/deployment/azure)
--   [Digital Ocean](https://docs.flowiseai.com/deployment/digital-ocean)
--   [GCP](https://docs.flowiseai.com/deployment/gcp)
+-   [AWS](http://forgeflowdocs.notion.site/deployment/aws)
+-   [Azure](http://forgeflowdocs.notion.site/deployment/azure)
+-   [Digital Ocean](http://forgeflowdocs.notion.site/deployment/digital-ocean)
+-   [GCP](http://forgeflowdocs.notion.site/deployment/gcp)
 -   <details>
       <summary>その他</summary>
 
-    -   [Railway](https://docs.flowiseai.com/deployment/railway)
+    -   [Railway](http://forgeflowdocs.notion.site/deployment/railway)
 
         [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pn4G8S?referralCode=WVNPD9)
 
-    -   [Render](https://docs.flowiseai.com/deployment/render)
+    -   [Render](http://forgeflowdocs.notion.site/deployment/render)
 
-        [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://docs.flowiseai.com/deployment/render)
+        [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](http://forgeflowdocs.notion.site/deployment/render)
 
-    -   [Hugging Face Spaces](https://docs.flowiseai.com/deployment/hugging-face)
+    -   [Hugging Face Spaces](http://forgeflowdocs.notion.site/deployment/hugging-face)
 
         <a href="https://huggingface.co/spaces/FlowiseAI/Flowise"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm.svg" alt="Hugging Face Spaces"></a>
 

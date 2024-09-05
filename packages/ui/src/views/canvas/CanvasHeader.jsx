@@ -8,12 +8,11 @@ import { useTheme } from '@mui/material/styles'
 import { Avatar, Box, ButtonBase, Typography, Stack, TextField } from '@mui/material'
 
 // icons
-import { IconSettings, IconChevronLeft, IconDeviceFloppy, IconPencil, IconCheck, IconX, IconCode } from '@tabler/icons-react'
+import { IconSettings, IconChevronLeft, IconDeviceFloppy, IconPencil, IconCheck, IconX, } from '@tabler/icons-react'
 
 // project imports
 import Settings from '@/views/settings'
 import SaveChatflowDialog from '@/ui-component/dialog/SaveChatflowDialog'
-import APICodeDialog from '@/views/chatflows/APICodeDialog'
 import ViewMessagesDialog from '@/ui-component/dialog/ViewMessagesDialog'
 import ChatflowConfigurationDialog from '@/ui-component/dialog/ChatflowConfigurationDialog'
 import UpsertHistoryDialog from '@/views/vectorstore/UpsertHistoryDialog'
@@ -43,8 +42,6 @@ const CanvasHeader = ({ chatflow, isAgentCanvas, handleSaveFlow, handleDeleteFlo
     const [flowName, setFlowName] = useState('')
     const [isSettingsOpen, setSettingsOpen] = useState(false)
     const [flowDialogOpen, setFlowDialogOpen] = useState(false)
-    const [apiDialogOpen, setAPIDialogOpen] = useState(false)
-    const [apiDialogProps, setAPIDialogProps] = useState({})
     const [viewMessagesDialogOpen, setViewMessagesDialogOpen] = useState(false)
     const [viewMessagesDialogProps, setViewMessagesDialogProps] = useState({})
     const [viewLeadsDialogOpen, setViewLeadsDialogOpen] = useState(false)
@@ -98,21 +95,6 @@ const CanvasHeader = ({ chatflow, isAgentCanvas, handleSaveFlow, handleDeleteFlo
             } catch (e) {
                 console.error(e)
             }
-        } else if (setting === 'exportChatflow') {
-            try {
-                const flowData = JSON.parse(chatflow.flowData)
-                let dataStr = JSON.stringify(generateExportFlowData(flowData), null, 2)
-                let dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr)
-
-                let exportFileDefaultName = `${chatflow.name} ${title}.json`
-
-                let linkElement = document.createElement('a')
-                linkElement.setAttribute('href', dataUri)
-                linkElement.setAttribute('download', exportFileDefaultName)
-                linkElement.click()
-            } catch (e) {
-                console.error(e)
-            }
         }
     }
 
@@ -128,48 +110,6 @@ const CanvasHeader = ({ chatflow, isAgentCanvas, handleSaveFlow, handleDeleteFlo
             }
             updateChatflowApi.request(chatflow.id, updateBody)
         }
-    }
-
-    const onAPIDialogClick = () => {
-        // If file type is file, isFormDataRequired = true
-        let isFormDataRequired = false
-        try {
-            const flowData = JSON.parse(chatflow.flowData)
-            const nodes = flowData.nodes
-            for (const node of nodes) {
-                if (node.data.inputParams.find((param) => param.type === 'file')) {
-                    isFormDataRequired = true
-                    break
-                }
-            }
-        } catch (e) {
-            console.error(e)
-        }
-
-        // If sessionId memory, isSessionMemory = true
-        let isSessionMemory = false
-        try {
-            const flowData = JSON.parse(chatflow.flowData)
-            const nodes = flowData.nodes
-            for (const node of nodes) {
-                if (node.data.inputParams.find((param) => param.name === 'sessionId')) {
-                    isSessionMemory = true
-                    break
-                }
-            }
-        } catch (e) {
-            console.error(e)
-        }
-
-        setAPIDialogProps({
-            title: 'Embed in website or use as API',
-            chatflowid: chatflow.id,
-            chatflowApiKeyId: chatflow.apikeyid,
-            isFormDataRequired,
-            isSessionMemory,
-            isAgentCanvas
-        })
-        setAPIDialogOpen(true)
     }
 
     const onSaveChatflowClick = () => {
@@ -330,28 +270,6 @@ const CanvasHeader = ({ chatflow, isAgentCanvas, handleSaveFlow, handleDeleteFlo
                     </Box>
                 </Stack>
                 <Box>
-                    {chatflow?.id && (
-                        <ButtonBase title='API Endpoint' sx={{ borderRadius: '50%', mr: 2 }}>
-                            <Avatar
-                                variant='rounded'
-                                sx={{
-                                    ...theme.typography.commonAvatar,
-                                    ...theme.typography.mediumAvatar,
-                                    transition: 'all .2s ease-in-out',
-                                    background: theme.palette.canvasHeader.deployLight,
-                                    color: theme.palette.canvasHeader.deployDark,
-                                    '&:hover': {
-                                        background: theme.palette.canvasHeader.deployDark,
-                                        color: theme.palette.canvasHeader.deployLight
-                                    }
-                                }}
-                                color='inherit'
-                                onClick={onAPIDialogClick}
-                            >
-                                <IconCode stroke={1.5} size='1.3rem' />
-                            </Avatar>
-                        </ButtonBase>
-                    )}
                     <ButtonBase title={`Save ${title}`} sx={{ borderRadius: '50%', mr: 2 }}>
                         <Avatar
                             variant='rounded'
@@ -412,7 +330,6 @@ const CanvasHeader = ({ chatflow, isAgentCanvas, handleSaveFlow, handleDeleteFlo
                 onCancel={() => setFlowDialogOpen(false)}
                 onConfirm={onConfirmSaveName}
             />
-            <APICodeDialog show={apiDialogOpen} dialogProps={apiDialogProps} onCancel={() => setAPIDialogOpen(false)} />
             <ViewMessagesDialog
                 show={viewMessagesDialogOpen}
                 dialogProps={viewMessagesDialogProps}

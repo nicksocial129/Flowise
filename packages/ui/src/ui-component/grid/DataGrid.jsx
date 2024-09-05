@@ -33,7 +33,7 @@ const StyledDataGrid = styled(MUIDataGrid)(({ theme }) => ({
     }
 }))
 
-export const DataGrid = ({ columns, rows, style, disabled = false, hideFooter = false, onChange }) => {
+export const DataGrid = ({ columns, rows, style, disabled = false, hideFooter = true, onChange }) => {
     const [rowValues, setRowValues] = useState(formatDataGridRows(rows) ?? [])
 
     const deleteItem = useCallback(

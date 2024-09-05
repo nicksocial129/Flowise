@@ -577,7 +577,7 @@
                         "label": "Session Id",
                         "name": "sessionId",
                         "type": "string",
-                        "description": "If not specified, a random id will be used. Learn <a target=\"_blank\" href=\"https://docs.flowiseai.com/memory#ui-and-embedded-chat\">more</a>",
+                        "description": "If not specified, a random id will be used. Learn <a target=\"_blank\" href=\"https://forgeflowdocs.notion.site/404-Forgeflow-Dev-Build-5c73e55cd2784635a4cff0fbb9db558d\">more</a>",
                         "default": "",
                         "additionalParams": true,
                         "optional": true,

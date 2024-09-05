@@ -262,7 +262,7 @@
                     {
                         "label": "Metadata Filter",
                         "name": "filter",
-                        "description": "Filter to apply to Vectara metadata. Refer to the <a target=\"_blank\" href=\"https://docs.flowiseai.com/vector-stores/vectara\">documentation</a> on how to use Vectara filters with Flowise.",
+                        "description": "Filter to apply to Vectara metadata. Refer to the <a target=\"_blank\" href=\"https://forgeflowdocs.notion.site/404-Forgeflow-Dev-Build-5c73e55cd2784635a4cff0fbb9db558d\">documentation</a> on how to use Vectara filters with Flowise.",
                         "type": "string",
                         "additionalParams": true,
                         "optional": true,
